@@ -1,0 +1,77 @@
+body {
+    background-color: beige;
+}
+
+#show-dialog {
+    display: block;
+    margin: 5px auto;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: goldenrod;
+}
+
+#book-dialog {
+    background-color: blanchedalmond;
+    border-radius: 20px;
+    font-family: fantasy;
+    text-align: center;
+}
+
+p {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+input[type="text"],
+input[type="number"] {
+    border-radius: 5px;
+}
+
+form>div {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+input[type="radio"] {
+    align-self: flex-start;
+}
+
+form > button {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: red;
+    font-weight: bold;
+}
+
+#add-book {
+    background-color: green;
+    font-weight: bold;
+    color: white;
+}
+
+#library-display {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.book {
+    background-color: burlywood;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.delete-button {
+    border-radius: 10px;
+    background-color: red;
+    font-weight: bold;
+    display: block;
+    margin: 5px;
+}
