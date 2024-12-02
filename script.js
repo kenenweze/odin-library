@@ -1,11 +1,4 @@
-const myLibrary = [
-    {
-        title: "Percy Jackson",
-        author: "Rick RIordan",
-        pages: 351,
-        read: true
-    }
-];
+const myLibrary = [];
 const title = document.getElementById("title");
 const author = document.getElementById("author");
 const pages = document.getElementById("pages");
@@ -15,12 +8,13 @@ const bookDialog = document.getElementById("book-dialog");
 const submitBook = document.getElementById("add-book");
 const libraryDisplay = document.getElementById("library-display");
 
-
-function Book(title, author, noOfPages, read) {
-    this.title = title;
-    this.author = author;
-    this.pages = noOfPages;
-    this.read = read;
+class Book {
+    constructor(title, author, noOfPages, read) {
+        this.title = title;
+        this.author = author;
+        this.pages = noOfPages;
+        this.read = read;
+    }
 }
 
 function addBookToLibrary() {
